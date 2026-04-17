@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <title>Spotify-audioMusic</title>
+  </head>
+
+  <body>
+    <nav class="nav flex">
+      <img src="image/logo.svg" alt="logo" />
+
+      <img class="hideonmob" src="image/home.svg" alt="" />
+
+      <div class="hideonmob search">
+        <img class="hideonmob" src="image/search.svg" alt="" />
+        <input
+          class="hideonmob"
+          type="text"
+          name=""
+          placeholder="What you want to play?"
+        />
+        <img class="hideonmob" src="image/lock.svg" alt="" />
+      </div>
+
+      <div class="sidebar">
+        <img
+          onclick="hidesidebar()"
+          src="close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+        />
+        <button class="sign" id="bt2">Log in</button>
+        <button class="sign" id="bt1">Sign up</button>
+        <a class="ancr" href="/download">
+          <span>
+            <img class="" id="dwnbtn" src="image/download.svg" alt="" />
+          </span>
+          <span class="">Install App</span>
+        </a>
+        <button class="">Premium</button>
+        <button class="">Support</button>
+        <button class="">Download</button>
+      </div>
+
+      <div class="navbtn hideonmob">
+        <button class="hideonmob">Premium</button>
+        <button class="hideonmob">Support</button>
+        <button class="hideonmob">Download</button>
+      </div>
+
+      <a class="ancr hideonmob" href="/download">
+        <span>
+          <img class="hideonmob" id="dwnbtn" src="image/download.svg" alt="" />
+        </span>
+        <span class="hideonmob">Install App</span>
+      </a>
+
+      <div class="loginbutton hideonmob">
+        <button class="hideonmob signnin" id="btn1">Sign up</button>
+        <button class="hideonmob loginnin" id="btn2">Log in</button>
+      </div>
+      <img onclick="sidebar()" class="menubtn" src="menu.svg" alt="" />
+    </nav>
+    <div class="container">
+      <div class="left hideonmob">
+        <div class="library flex">
+          <h2>Your library</h2>
+          <img class="invert" src="image/plus.svg" alt="" />
+        </div>
+        <div class="box">
+          <div class="first boxer">
+            <div class="headings flex">
+              <h2 class="font">Create your first playlist</h2>
+              <span class="f2">It's easy, we'll help you</span>
+              <div class="audios">
+                
+              </div>
+            </div>
+
+            <div class="listbtn">
+              <button>Create playlist</button>
+            </div>
+          </div>
+          <div class="first second">
+            <div class="headings flex">
+              <h2 class="font">Let's find some podcasts to follow</h2>
+              <span class="f2">We'll keep you updated on new episodes</span>
+            </div>
+
+            <div class="listbtn2 flex">
+              <a href="/genre/podcasts-web">Browse podcasts</a>
+            </div>
+          </div>
+        </div>
+        <div class="leftfooter flex">
+          <a href="https://www.spotify.com/pk-en/legal/">Legal</a>
+
+          <a href="https://www.spotify.com/pk-en/safetyandprivacy/">
+            Safety &amp; Privacy Center
+          </a>
+
+          <a href="https://www.spotify.com/pk-en/legal/privacy-policy/">
+            Privacy Policy
+          </a>
+
+          <a href="https://www.spotify.com/pk-en/legal/cookies-policy/">
+            Cookies
+          </a>
+
+          <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">
+            About Ads
+          </a>
+
+          <a href="https://www.spotify.com/pk-en/accessibility/">
+            Accessibility
+          </a>
+        </div>
+
+        <div class="lang flex">
+          <img class="invert" src="image/language.svg" alt="" />
+          English
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h2 class="h2">
+            <a href="/section/0JQ5DB5E8N831KzFzsBBQ2"> Trending songs </a>
+          </h2>
+
+          <a class="showall" href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+            Show all
+          </a>
+        </div>
+        <div class="songlist">
+          <div class="songs">
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">End of Begining</span>
+              <p class="artistName">Djo</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yoyo.jfif" alt="" />
+              <span class="songName">Aadat</span>
+              <p class="artistName">Yo Yo Honey Singh</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/janum.jfif" alt="" />
+              <span class="songName">Janum Fida e Hadari</span>
+              <p class="artistName">Sadiq Hussain</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/ljpal.jfif" alt="" />
+              <span class="songName">Bara Lajpal Ali</span>
+              <p class="artistName">Muhammad Saeed Khan</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">Khoj Khoj</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/meri.jfif" alt="" />
+              <span class="songName">Meri Zindagi ho tum</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/gehra hu.jfif" alt="" />
+              <span class="songName">Gehra Hu</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/zindagi.webp" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Artist name</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading">
+          <h2 class="h2">
+            <a href="/section/0JQ5DB5E8N831KzFzsBBQ2"> Popular Artists </a>
+          </h2>
+
+          <a class="showall" href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+            Show all
+          </a>
+        </div>
+        <div class="songlist">
+          <div class="songs round">
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">End of Begining</span>
+              <p class="artistName">Djo</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yoyo.jfif" alt="" />
+              <span class="songName">Aadat</span>
+              <p class="artistName">Yo Yo Honey Singh</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/janum.jfif" alt="" />
+              <span class="songName">Janum Fida e Hadari</span>
+              <p class="artistName">Sadiq Hussain</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/ljpal.jfif" alt="" />
+              <span class="songName">Bara Lajpal Ali</span>
+              <p class="artistName">Muhammad Saeed Khan</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">Khoj Khoj</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/meri.jfif" alt="" />
+              <span class="songName">Meri Zindagi ho tum</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/gehra hu.jfif" alt="" />
+              <span class="songName">Gehra Hu</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/zindagi.webp" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yawar.jfif" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Yawar Ali Yawar</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading">
+          <h2 class="h2">
+            <a href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+              Popular albums and singles
+            </a>
+          </h2>
+
+          <a class="showall" href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+            Show all
+          </a>
+        </div>
+        <div class="songlist">
+          <div class="songs">
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">End of Begining</span>
+              <p class="artistName">Djo</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yoyo.jfif" alt="" />
+              <span class="songName">Aadat</span>
+              <p class="artistName">Yo Yo Honey Singh</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/janum.jfif" alt="" />
+              <span class="songName">Janum Fida e Hadari</span>
+              <p class="artistName">Sadiq Hussain</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/ljpal.jfif" alt="" />
+              <span class="songName">Bara Lajpal Ali</span>
+              <p class="artistName">Muhammad Saeed Khan</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">Khoj Khoj</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/meri.jfif" alt="" />
+              <span class="songName">Meri Zindagi ho tum</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/gehra hu.jfif" alt="" />
+              <span class="songName">Gehra Hu</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/zindagi.webp" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Artist name</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading radio">
+          <h2 class="h2">
+            <a href="/section/0JQ5DB5E8N831KzFzsBBQ2"> Popular radio </a>
+          </h2>
+
+          <a class="showall" href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+            Show all
+          </a>
+        </div>
+        <div class="songlist">
+          <div class="songs">
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">End of Begining</span>
+              <p class="artistName">Djo</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yoyo.jfif" alt="" />
+              <span class="songName">Aadat</span>
+              <p class="artistName">Yo Yo Honey Singh</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/janum.jfif" alt="" />
+              <span class="songName">Janum Fida e Hadari</span>
+              <p class="artistName">Sadiq Hussain</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/ljpal.jfif" alt="" />
+              <span class="songName">Bara Lajpal Ali</span>
+              <p class="artistName">Muhammad Saeed Khan</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">Khoj Khoj</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/meri.jfif" alt="" />
+              <span class="songName">Meri Zindagi ho tum</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/gehra hu.jfif" alt="" />
+              <span class="songName">Gehra Hu</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/zindagi.webp" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Artist name</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading">
+          <h2 class="h2">
+            <a href="/section/0JQ5DB5E8N831KzFzsBBQ2"> Feachured charts</a>
+          </h2>
+
+          <a class="showall" href="/section/0JQ5DB5E8N831KzFzsBBQ2">
+            Show all
+          </a>
+        </div>
+        <div class="songlist">
+          <div class="songs">
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">End of Begining</span>
+              <p class="artistName">Djo</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/yoyo.jfif" alt="" />
+              <span class="songName">Aadat</span>
+              <p class="artistName">Yo Yo Honey Singh</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/janum.jfif" alt="" />
+              <span class="songName">Janum Fida e Hadari</span>
+              <p class="artistName">Sadiq Hussain</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/ljpal.jfif" alt="" />
+              <span class="songName">Bara Lajpal Ali</span>
+              <p class="artistName">Muhammad Saeed Khan</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/khoj.jfif" alt="" />
+              <span class="songName">Khoj Khoj</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/meri.jfif" alt="" />
+              <span class="songName">Meri Zindagi ho tum</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/gehra hu.jfif" alt="" />
+              <span class="songName">Gehra Hu</span>
+              <p class="artistName">Artist name</p>
+            </div>
+            <div class="card">
+              <img class="bbt" src="image/playbuton.svg" alt="" />
+              <img src="image/zindagi.webp" alt="" />
+              <span class="songName">Zindagi</span>
+              <p class="artistName">Artist name</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="poi">
+          <div class="notes">
+            <div>
+              <ul>
+                <li><strong>Company</strong></li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/about-us/contact/"
+                    >About</a
+                  >
+                </li>
+                <li><a href="https://www.lifeatspotify.com/">Jobs</a></li>
+                <li>
+                  <a href="https://newsroom.spotify.com/">For the Record</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li><strong>Communities</strong></li>
+                <li><a href="https://artists.spotify.com/">For Artists</a></li>
+                <li><a href="https://developer.spotify.com/">Developers</a></li>
+                <li><a href="https://ads.spotify.com/">Advertising</a></li>
+                <li><a href="https://investors.spotify.com/">Investors</a></li>
+                <li><a href="https://spotifyforvendors.com/">Vendors</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li><strong>Useful links</strong></li>
+                <li><a href="https://support.spotify.com/">Support</a></li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/free/"
+                    >Free Mobile App</a
+                  >
+                </li>
+                <li><a href="/popular-in/pk">Popular by Country</a></li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/import-music/"
+                    >Import your music</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li><strong>Spotify Plans</strong></li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/premium/"
+                    >Premium Individual</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/duo/">Premium Duo</a>
+                </li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/family/"
+                    >Premium Family</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/student/"
+                    >Premium Student</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.spotify.com/pk-en/free/">Spotify Free</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sites">
+            <div class="svgs">
+              <a
+                href="https://instagram.com/spotify"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path
+                    d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.65 2.65 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.5 2.5 0 0 1-.921-.599 2.5 2.5 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.5 2.5 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047z"
+                  ></path>
+                  <path
+                    d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216m0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335m4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://twitter.com/spotify"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                title="Twitter"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path
+                    d="M13.54 3.889a2.97 2.97 0 0 0 1.333-1.683 6 6 0 0 1-1.929.738 3 3 0 0 0-.996-.706 3 3 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.93 2.93 0 0 0-.889 2.15q0 .318.08.691a8.5 8.5 0 0 1-3.484-.932A8.5 8.5 0 0 1 1.532 2.54a3 3 0 0 0-.413 1.523q0 .778.361 1.445.36.668.988 1.08a2.9 2.9 0 0 1-1.373-.374v.04q0 1.088.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.94 2.94 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.95 2.95 0 0 0 1.77.603 5.94 5.94 0 0 1-3.77 1.302q-.365 0-.722-.048A8.4 8.4 0 0 0 5.15 14q1.358 0 2.572-.361 1.215-.36 2.147-.988a9 9 0 0 0 1.683-1.46q.75-.834 1.234-1.798a9.5 9.5 0 0 0 .738-1.988 8.4 8.4 0 0 0 .246-2.429 6.2 6.2 0 0 0 1.508-1.563q-.84.373-1.738.476"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://www.facebook.com/Spotify"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path
+                    d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8 8 0 0 0 16 8"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="version">
+          <p>© 2026 Spotify AB</p>
+        </div>
+      </div>
+    </div>
+    <div class="mobnav">
+      <div class="potify">
+        <img class="invert" src="image/home.svg" alt="" />
+        <span>home</span>
+      </div>
+      <div class="potify">
+        <img class="invert" src="image/search.svg" alt="" />
+        <span>search</span>
+      </div>
+      <div class="potify">
+        <img class="invert" src="image/lock.svg" alt="" />
+        <span>library</span>
+      </div>
+      <div class="potify">
+        <img class="invert" src="image/logo.svg" alt="" />
+
+        <span>premium</span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

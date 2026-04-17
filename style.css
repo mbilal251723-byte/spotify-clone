@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  justify-content: space-between;
+  margin: 7px 29px;
+  align-items: center;
+}
+
+.nav img {
+  width: 36px;
+  filter: invert(1);
+}
+
+.search {
+  display: flex;
+  width: 30vw;
+  border: none;
+  background-color: rgb(49, 47, 47);
+  align-items: center;
+  border-radius: 30px;
+  padding: 3px 9px;
+}
+.search input {
+  border: none;
+  width: 88%;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbtn {
+  display: flex;
+  gap: 10px;
+}
+.navbtn button {
+  border: none;
+  background: none;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbtn button:hover {
+  color: white;
+  font-weight: 750;
+  font-size: 17px;
+}
+
+.loginbutton {
+  display: flex;
+  gap: 11px;
+}
+
+nav a{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#dwnbtn {
+  width: 18px;
+}
+
+.ancr:hover {
+  color: white;
+  font-weight: 750;
+  font-size: 17px;
+}
+.ancr {
+  align-items: center;
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#btn1 {
+  background: none;
+  border: none;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
+#btn2 {
+  width: 65px;
+  height: 35px;
+  border-radius: 28px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+#btn2:hover{
+   width: 70px;
+  height: 36px;
+}
+
+.home {
+  background-color: rgb(36, 35, 35);
+  border-radius: 28px;
+  width: 55px;
+  align-items: center;
+}
+.home img {
+  padding: 8px;
+}
+
+.container {
+  display: flex;
+  
+}
+
+.left {
+  width: 28vw;
+  height: 88vh;
+  background-color: rgb(36, 35, 35);
+  margin: 0px 4px;
+  border-radius: 7px;
+  position: relative;
+}
+
+.right {
+  width: 72vw;
+  max-height: 88vh;
+  background-color: rgb(36, 35, 35);
+  margin: 0px 4px;
+  border-radius: 7px;
+  overflow-y: scroll;
+}
+
+.library {
+  justify-content: space-between;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.library img {
+  width: 24px;
+}
+
+.leftfooter {
+  flex-wrap: wrap;
+  gap: 11px;
+  padding: 0px 35px 0px 9px;
+  position: absolute;
+  bottom: 115px;
+  margin-left: 25px;
+}
+
+.leftfooter a{
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.box {
+  height: 40%;
+  width: 100%;
+  background-color: rgb(44, 42, 42);
+  margin: 25px 0px 0px 0px;
+  overflow-y: scroll;
+}
+
+.lang {
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 95px;
+  height: 29px;
+  justify-content: center;
+  gap: 6px;
+  position: absolute;
+  bottom: 30px;
+  margin-left: 30px;
+}
+
+.lang img {
+  width: 18px;
+}
+
+.first {
+  height: 50%;
+  background-color: rgb(71, 69, 69);
+  margin: 10px 6px 22px 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 10px 19px;
+  gap: 20px;
+  border-radius: 9px;
+}
+
+.boxer{
+  height: 45%;
+}
+
+.menubtn{
+  display: none;
+ }
+
+.sidebar{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: var(10px);
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 12px 0px 0px 20px;
+} 
+.sidebar button{
+  align-items: center;
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+.sidebar button:hover{
+  color: white;
+  font-weight: 750;
+  font-size: 17px;  
+}
+.sidebar :first-child{
+  
+  width: 20px;
+  margin-left: auto;
+  padding-right: 19px;
+  
+}
+
+.sidebar :first-child:hover{
+  width: 22px;
+  color: white;
+}
+.mobnav{
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: var(10px);
+  background-color: rgba(0, 0, 0, 0.692);
+  
+}
+
+
+.songName{
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.artistName{       
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.mobnav img{
+   width: 26px;
+}
+
+
+@media (max-width: 800px) {
+    .hideonmob{
+        display: none;
+    }
+    .menubtn{
+      display: flex;
+    }
+    nav{
+      justify-content: space-between;
+    }
+    .right{
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+    }
+    .poi{
+      flex-direction: column;
+      margin-top: 0px;
+      gap: 15px;
+    }
+    .notes{
+      flex-direction: column;
+      gap: 15px;
+
+    }
+    .sites{
+      gap: 10px;
+    }
+    .mobnav{
+      display: flex;
+    }
+}
