@@ -14,3 +14,7 @@ https://spotify-clone-bilal.netlify.app/
 - HTML  
 - CSS  
 - JavaScript  
+
+## 📸 Screenshot
+
+![Spotify Clone](spotify-clone.png)
